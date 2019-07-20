@@ -79,3 +79,40 @@ small {
         }
     }
 }
+
+header {
+    height: 5px;
+    background: $bluee;
+}
+
+.navbar-light {
+    background-color: #0c0c0ce3 !important;
+    .navbar-nav {
+        .dropdown-toggle {
+            padding-left: 24px;
+            &:after {
+                display: none;
+            }
+            img {
+                margin-left: 8px;
+            }
+        }
+        .nav-link {
+            color: white;
+            font-weight: 300!important;
+            &:active,
+            &:hover,
+            &:focus {
+                color: white!important;
+                outline: 0;
+            }
+        }
+    }
+}
+
+.user-info {
+    margin-top: 24px;
+    border-radius: $radius;
+    background: red;
+    height: 150px;
+}
