@@ -3,6 +3,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: $black;
+    background: #e3e3db2e;
 }
 
 .form-control {
@@ -17,6 +18,10 @@ small {
     margin-bottom: 8px;
     padding: 8px 16px;
     font-weight: 300;
+}
+
+.bold {
+    font-weight: 500;
 }
 
 .frank {
@@ -81,15 +86,28 @@ small {
 }
 
 header {
-    height: 5px;
-    background: $bluee;
+    .container {
+        .row {
+            height: 80px;
+            .onlines {
+                padding: 8px 16px;
+                background: white;
+                font-weight: 500;
+                text-align: center;
+                border-radius: 3px;
+                width: max-content;
+            }
+        }
+    }
+    background: #593d81;
 }
 
 .navbar-light {
-    background-color: #0c0c0ce3 !important;
+    background-color: white !important;
+    border-bottom: 1px solid #5f5b6626;
     .navbar-nav {
         .dropdown-toggle {
-            padding-left: 24px;
+            padding-left: 16px;
             &:after {
                 display: none;
             }
@@ -97,14 +115,18 @@ header {
                 margin-left: 8px;
             }
         }
-        .nav-link {
-            color: white;
-            font-weight: 300!important;
+        .nav-link,
+        .dropdown-item {
+            color: $black;
+            font-weight: 500!important;
+            text-transform: uppercase;
+            font-size: 14px;
             &:active,
             &:hover,
             &:focus {
-                color: white!important;
+                color: #593d81!important;
                 outline: 0;
+                background: transparent;
             }
         }
     }
@@ -113,6 +135,225 @@ header {
 .user-info {
     margin-top: 24px;
     border-radius: $radius;
-    background: red;
-    height: 150px;
+    background: white;
+    border: 1px solid #5f5b6626;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 82px;
+    p {
+        margin-top: 16px;
+    }
+    img {
+        position: absolute;
+        right: 24px;
+        top: 32px;
+    }
+    .lookavatar {
+        height: 64px;
+        width: 64px;
+        border: 1px solid #5f5b6626;
+        border-radius: 3px;
+        margin: 8px 8px;
+        background-image: url(../images/avatar.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        transition: $transition;
+        &:hover {
+            background-color: $roxo;
+        }
+    }
+}
+
+.user-coins {
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 1px;
+    padding: 8px 8px;
+    background: $roxo;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+.loteria-info {
+    margin-top: 24px;
+    border-radius: $radius;
+    background: white;
+    border: 1px solid #5f5b6626;
+    .title {
+        position: absolute;
+        top: 32px;
+        right: 24px;
+        font-size: 12px;
+        background: #593d81;
+        color: white;
+        padding: 0px 8px;
+        border-radius: 3px;
+    }
+    height: 118px;
+    p {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    span {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    a {
+        float: right;
+        margin-right: 16px;
+        color: $black;
+        transition: $transition;
+        img {
+            margin-right: 4px;
+            transition: $transition;
+        }
+        &:hover {
+            font-weight: 300;
+            text-decoration: none;
+            color: $roxo;
+            img {
+                margin-left: 4px;
+                margin-right: 0px;
+            }
+        }
+    }
+    .raro {
+        height: 100px;
+        width: 100px;
+        margin: 8px 8px;
+        border: 1px solid #5f5b6626;
+        border-radius: $radius;
+        position: relative;
+        float: left;
+        transition: $transition;
+        background-image: url(../images/raro.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        .time {
+            font-size: 12px;
+            background: $roxo;
+            width: max-content;
+            padding: 4px;
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            color: $white;
+            border-radius: $radius;
+            transition: $transition;
+        }
+        &:hover {
+            background-color: $roxo;
+            .time {
+                background: white;
+                color: $roxo;
+            }
+        }
+    }
+}
+
+.leilao-info {
+    margin-top: 8px;
+    border-radius: $radius;
+    background: $roxo;
+    border: 1px solid #5f5b6626;
+    height: 118px;
+    p {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .title {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        font-size: 12px;
+        background: white;
+        color: $roxo;
+        padding: 0px 8px;
+        border-radius: 3px;
+    }
+    .raro {
+        height: 100px;
+        width: 100px;
+        margin: 8px 8px;
+        border: 1px solid #5f5b6626;
+        border-radius: $radius;
+        position: relative;
+        float: left;
+        transition: $transition;
+        background-image: url(../images/raro.png);
+        background-color: white;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        .time {
+            font-size: 12px;
+            background: $roxo;
+            color: white;
+            width: max-content;
+            padding: 4px;
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            border-radius: $radius;
+            transition: $transition;
+        }
+    }
+    label {
+        font-size: 12px;
+        color: white;
+        line-height: 16px;
+        margin: 0;
+        margin-top: 16px;
+    }
+    #helpId {
+        font-size: 10px;
+        line-height: 12px;
+        color: $white!important;
+    }
+    .form-control {
+        background-color: #ffffff4f;
+        border: 0;
+        color: white;
+        &:active,
+        &:focus,
+        &:hover {
+            outline: 0;
+            box-shadow: 0 0 0 0;
+        }
+    }
+}
+
+#noticias {
+    margin-top: 12px;
+    .noticias-items {
+        background: $roxo;
+        height: 200px;
+        width: 200px;
+        margin: 4px;
+        border-radius: $radius;
+        .data {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 12px;
+            background: white;
+            color: $roxo;
+            padding: 0px 8px;
+            border-radius: 3px;
+        }
+        .titulo-noticia {
+            position: absolute;
+            bottom: 8px;
+            font-size: 14px;
+            color: $white;
+            padding: 0px 8px;
+            border-radius: 3px;
+        }
+    }
 }
