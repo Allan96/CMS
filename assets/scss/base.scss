@@ -517,3 +517,18 @@ footer {
         }
     }
 }
+
+.info-mais {
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+    cursor: pointer;
+    background-color: $roxo;
+    background-image: url(../images/mais.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
