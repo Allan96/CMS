@@ -1,0 +1,21 @@
+.efeito-escrita {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(9) 500ms infinite;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0ch;
+    }
+    25% {
+        width: 19ch;
+    }
+    90% {
+        width: 19ch;
+    }
+    100% {
+        width: 0ch;
+    }
+}
