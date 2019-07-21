@@ -563,7 +563,7 @@ footer {
 }
 
 .info-mais {
-    padding: 16px;
+    padding: 8px 16px;
     border-radius: 3px;
     position: fixed;
     bottom: 8px;
@@ -572,6 +572,7 @@ footer {
     background-color: $roxo;
     img {
         transition: $transition;
+        transform: rotate(45deg);
     }
 }
 
@@ -660,7 +661,7 @@ footer {
 
 .open {
     img {
-        transform: rotate(45deg);
+        transform: rotate(0deg);
         transition: $transition;
     }
 }
