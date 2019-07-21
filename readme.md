@@ -26,11 +26,11 @@ O Yuup Hotel, ou Yuup nome pelo qual é mais conhecido, é uma comunidade virtua
 
 ## Sistemas da Client
 
-- [] Moedas por socket
-- [] Sistema de diamantes por tempo
-- [] Sistema de alertas por socket
-- [] Sistema de ultimas noticias
-- [] Sistema de mais informações
+- [ ] Moedas por socket
+- [ ] Sistema de diamantes por tempo
+- [ ] Sistema de alertas por socket
+- [ ] Sistema de ultimas noticias
+- [ ] Sistema de mais informações
 
 
 ## Prints
