@@ -46,8 +46,15 @@ small {
 }
 
 #login {
+    background-color: $roxo;
     .areadelogin {
         min-height: 100vh;
+        .login {
+            padding-top: 24px;
+            padding-bottom: 16px;
+            background: $white;
+            border-radius: $radius;
+        }
     }
 }
 
@@ -90,6 +97,7 @@ header {
         .row {
             height: 80px;
             .onlines {
+                font-size: 14px;
                 padding: 8px 16px;
                 background: white;
                 font-weight: 500;
@@ -354,6 +362,57 @@ header {
             color: $white;
             padding: 0px 8px;
             border-radius: 3px;
+        }
+        .autor-noticia {
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: white;
+            border-radius: 3px;
+        }
+    }
+}
+
+.users-list {
+    margin-top: 8px;
+    border-radius: $radius;
+    border: 1px solid #5f5b6626;
+    .list-item {
+        position: relative;
+        .tag {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 12px;
+            background: $roxo;
+            color: $white;
+            padding: 0px 8px;
+            border-radius: 3px;
+        }
+        height: 80px;
+        border-bottom: 1px dashed #5f5b6626;
+        .list-avatar {
+            height: 64px;
+            width: 64px;
+            border: 1px solid #5f5b6626;
+            border-radius: 3px;
+            margin: 8px 8px;
+            background-image: url(../images/avatar.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            float: left;
+            transition: $transition;
+            &:hover {
+                background-color: $roxo;
+            }
+        }
+        p {
+            line-height: 18px;
+            margin-top: 24px;
+            float: left;
+            margin-left: 8px;
         }
     }
 }
