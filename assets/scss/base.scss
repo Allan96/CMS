@@ -379,6 +379,7 @@ header {
     margin-top: 8px;
     border-radius: $radius;
     border: 1px solid #5f5b6626;
+    background: $white;
     .list-item {
         position: relative;
         .tag {
@@ -491,5 +492,28 @@ header {
         font-size: 10px;
         line-height: 12px;
         color: $black!important;
+    }
+}
+
+footer {
+    height: 50px;
+    #text-footer {
+        padding: 8px;
+        background: $roxo;
+        margin: 16px -15px;
+        border-radius: $radius;
+        p {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+        .redes-sociais {
+            img {
+                float: right;
+                margin-left: 12px;
+                margin-top: 4px;
+            }
+        }
     }
 }
