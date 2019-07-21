@@ -16,9 +16,9 @@
 <body>
     <header>
         <div class="container">
-            <div class="row d-flex align-content-center justify-content-end">
+            <div class="row d-flex align-content-center justify-content-md-end">
                 <div class="col-2">
-                    <div class="onlines">
+                    <div class="onlines d-none d-md-block">
                         90
                         <small>usuários</small>
 
@@ -31,7 +31,7 @@
         <div class="container">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                    MENU
         </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -70,7 +70,7 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-12 col-md-5">
                 <div class="user-info">
                     <img src="./assets/images/settings.svg" width="16" alt="" srcset="">
                     <div class="lookavatar"></div>
@@ -86,7 +86,7 @@
                     987 moedas | 764 diamantes | 6754 sorvetinhos
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-12 col-md-7">
                 <div class="loteria-info">
                     <span class="title">
                         LOTERIA
@@ -103,7 +103,7 @@
 
                         <br> Você compra seu ticket contendo 2 números aleatórios. Quanto mais tickets comprar, maiores são as suas chances de GANHAR.
                         <br>
-                        <a href="#"> Ir para a loteria <img src="./assets/images/arrow-right.svg" width="10" alt=""></a>
+                        <a class="d-none d-md-block" href="#"> Ir para a loteria <img src="./assets/images/arrow-right.svg" width="10" alt=""></a>
                     </p>
                 </div>
             </div>
@@ -112,12 +112,12 @@
                     <span class="title">LEILÃO DE RAROS</span>
                     <div class="container">
                         <div class="row">
-                            <div class="raro">
+                            <div class="raro d-none d-md-block">
                                 <div class="time">
                                     5 dias
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-12 col-md-5">
                                 <p class="c-white">
                                     <span class="bold">
                                                 Como funciona?
@@ -125,7 +125,7 @@
                                     <br> Lance é o valor que você está disposto a pagar pelo raro que está sendo leiloado. A pessoa que faz o maior lance é quem fica com o raro. Existe também uma oferta inicial, que é estipulada pela nossa equipe.
                                 </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-md-4">
                                 <div class="form-group c-white">
                                     <label for="">Dar meu lance ( Você tem 987 diamantes )</label>
                                     <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
@@ -205,10 +205,10 @@
             </div>
             <div class="col-12">
                 <div class="bolao-info">
-                    <!-- <span class="title">BOLÃO</span> -->
+                    <span class="title d-block d-md-none">BOLÃO</span>
                     <div class="container">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-12 col-md-7">
                                 <p class="c-black">
                                     <span class="bold">
                                                     Como funciona?
@@ -217,7 +217,7 @@
                                     e o usuário sorteado levará pra casa o valor de total do bolão. Isso mesmo, Todo o bolão será do vencedor.
                                 </p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-8 col-md-3">
                                 <div class="form-group c-white">
                                     <label for="">Último vencedor: <span class="bold">Usuário</span> </label>
                                     <br>
@@ -226,7 +226,7 @@
                                     <small id="helpId" class="text-muted">Vicê jogou um total de <span class="bold">5</span> vezes no bolão!</small>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-4 col-md-2">
                                 <div class="raro">
                                     <p>
                                         14K <br>
@@ -247,7 +247,7 @@
 
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
                 <div class="users-list">
                     <div class="list-item">
                         <div class="tag">Moedas</div>
@@ -305,7 +305,7 @@
 
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
                 <div class="users-list">
                     <div class="list-item">
                         <div class="tag">Diamantes</div>
@@ -357,7 +357,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
                 <div class="users-list">
                     <div class="list-item">
                         <div class="tag">Sorvetinhos</div>
@@ -412,7 +412,7 @@
 
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
                 <div class="users-list">
                     <div class="list-item">
                         <div class="tag">Picolés</div>
@@ -475,15 +475,16 @@
                 <div class="col-12">
                     <div class="container">
                         <div id="text-footer" class="row">
-                            <div class="col-1">
+                            <div class="col-2 col-md-1">
                                 <img src="./assets/images/quiron.svg" width="32" alt="">
+
                             </div>
-                            <div class="col-7">
+                            <div class="col-10 col-md-7">
                                 <p class="c-white">
                                     Yuup Hotel © 2017-2019. Não autorizamos a cópia total ou parcial deste website.
                                 </p>
                             </div>
-                            <div class="col-4 redes-sociais">
+                            <div class="col-12 col-md-4 redes-sociais">
                                 <img src="./assets/images/discord.svg" width="24" alt="">
                                 <img src="./assets/images/facebook.svg" width="24" alt="">
                                 <img src="./assets/images/twitter.svg" width="24" alt="">
@@ -495,7 +496,188 @@
             </div>
         </div>
     </footer>
-    <div class="info-mais"></div>
+    <div class="info-mais">
+        <img src="./assets/images/mais.svg" width="24" alt="">
+    </div>
+
+    <div class="info-mais-div">
+        <div class="close-icon">
+            <img src="./assets/images/close.svg" width="16" alt="">
+        </div>
+
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                    Ganhou o evento xxxxxxx
+                            </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                        Ganhou o evento xxxxxxx
+                                </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                            Ganhou o evento xxxxxxx
+                                    </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                                Ganhou o evento xxxxxxx
+                                        </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                                    Ganhou o evento xxxxxxx
+                                            </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                    Ganhou o evento xxxxxxx
+                            </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                        Ganhou o evento xxxxxxx
+                                </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                            Ganhou o evento xxxxxxx
+                                    </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                    Ganhou o evento xxxxxxx
+                            </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                        Ganhou o evento xxxxxxx
+                                </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                            Ganhou o evento xxxxxxx
+                                    </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                                Ganhou o evento xxxxxxx
+                                        </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                    Ganhou o evento xxxxxxx
+                            </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                        Ganhou o evento xxxxxxx
+                                </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                            Ganhou o evento xxxxxxx
+                                    </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                                Ganhou o evento xxxxxxx
+                                        </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                                    Ganhou o evento xxxxxxx
+                                            </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                    Ganhou o evento xxxxxxx
+                            </small>
+            </p>
+        </div>
+        <div class="lista-info">
+            <div class="avatar-user-info"></div>
+            <p class="c-white">
+                Usuário <br>
+                <small>
+                                        Ganhou o evento xxxxxxx
+                                </small>
+            </p>
+        </div>
+    </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
