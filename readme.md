@@ -4,4 +4,4 @@ O Yuup Hotel, ou Yuup nome pelo qual é mais conhecido, é uma comunidade virtua
 
 ## Prints
 ### Página principal ( 20/07 )
-![Alt text](https://github.com/Allan96/CMS/blob/master/pages/principal.png?raw=true "Principal")
+![Principal](https://github.com/Allan96/CMS/blob/master/pages/principal.png?raw=true "Principal")
