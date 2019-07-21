@@ -416,3 +416,80 @@ header {
         }
     }
 }
+
+.bolao-info {
+    margin-top: 8px;
+    border-radius: $radius;
+    background: $white;
+    border: 1px solid #5f5b6626;
+    height: 118px;
+    p {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .btn-primary {
+        margin-bottom: 0px;
+        &:active,
+        &:focus,
+        &:hover {
+            outline: 0;
+            box-shadow: 0 0 0 0;
+        }
+    }
+    .title {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        font-size: 12px;
+        background: $roxo;
+        color: $white;
+        padding: 0px 8px;
+        border-radius: 3px;
+    }
+    .raro {
+        height: 100px;
+        width: 100px;
+        margin: 8px -7px;
+        border: 1px solid #5f5b6626;
+        border-radius: $radius;
+        position: relative;
+        float: right;
+        transition: $transition;
+        background-color: $roxo;
+        color: $white;
+        line-height: 16px;
+        p {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 24px;
+            small {
+                font-size: 14px;
+            }
+        }
+        .time {
+            font-size: 12px;
+            background: $white;
+            color: $roxo;
+            width: max-content;
+            padding: 4px;
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            border-radius: $radius;
+            transition: $transition;
+        }
+    }
+    label {
+        font-size: 12px;
+        color: $black;
+        line-height: 16px;
+        margin: 0;
+        margin-top: 16px;
+    }
+    #helpId {
+        font-size: 10px;
+        line-height: 12px;
+        color: $black!important;
+    }
+}
