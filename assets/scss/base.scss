@@ -216,6 +216,16 @@ header {
             background-color: $roxo;
         }
     }
+    .title {
+        position: absolute;
+        top: 32px;
+        right: 24px;
+        font-size: 12px;
+        background: $roxo;
+        color: white;
+        padding: 0px 8px;
+        border-radius: 3px;
+    }
 }
 
 .user-coins {
@@ -630,7 +640,7 @@ footer {
     }
     .lista-info {
         height: 72px;
-        border-bottom: 1px dashed white;
+        border-bottom: 1px dashed rgba(255, 255, 255, .5);
         &:last-child {
             border-bottom: 0px dashed white;
         }
@@ -648,7 +658,7 @@ footer {
             color: $white;
             line-height: 16px;
             &:hover {
-                background-color: rgba( 255, 255, 255, .2);
+                background-color: rgba( 255, 255, 255, .1);
             }
         }
         p {
