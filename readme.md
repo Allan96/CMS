@@ -32,14 +32,3 @@ O Yuup Hotel, ou Yuup nome pelo qual é mais conhecido, é uma comunidade virtua
 - [ ] Sistema de ultimas noticias
 - [ ] Sistema de mais informações
 
-
-## Prints
-### Página principal
-![Principal](https://github.com/Allan96/CMS/blob/master/pages/principal.png?raw=true "Principal")
-
-### Index
-![Index](https://github.com/Allan96/CMS/blob/master/pages/index.png?raw=true "Index")
-
-### Registro
-![Registro](https://github.com/Allan96/CMS/blob/master/pages/registro.png?raw=true "Registro")
-
