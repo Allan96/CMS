@@ -693,6 +693,9 @@ footer {
     border: 1px solid #5f5b6626;
     border-radius: $radius;
     background-color: $white;
+    img {
+        max-width: 100%;
+    }
     .data {
         position: absolute;
         top: 8px;
