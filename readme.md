@@ -9,8 +9,8 @@ O Yuup Hotel, ou Yuup nome pelo qual é mais conhecido, é uma comunidade virtua
 - [x] Pricipal
 - [ ] Loteria
 - [ ] Noticias
-- [ ] Equipe
-- [ ] Colaboradores
+- [x] Equipe
+- [x] Colaboradores
 - [ ] Hall of Fame (Usuários)
 - [ ] Hall of Fame (Equipe)
 
