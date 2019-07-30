@@ -142,9 +142,10 @@ h2 {
 }
 
 header {
+    border-bottom: 5px solid #40206d;
     .container {
         .row {
-            height: 80px;
+            height: 150px;
             .onlines {
                 font-size: 14px;
                 padding: 8px 16px;
@@ -160,8 +161,9 @@ header {
 }
 
 .navbar-light {
+    border-top: 2px solid #40206d;
     background-color: white !important;
-    border-bottom: 1px solid #5f5b6626;
+    border-bottom: 2px solid #5f5b6626;
     .navbar-nav {
         .dropdown-toggle {
             padding-right: 16px;
@@ -204,14 +206,14 @@ header {
     border-bottom: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    height: 82px;
+    min-height: 86px;
     p {
         margin-top: 16px;
     }
     img {
         position: absolute;
         right: 24px;
-        top: 32px;
+        top: 37px;
     }
     .lookavatar {
         height: 64px;
@@ -244,11 +246,12 @@ header {
     color: white;
     font-size: 14px;
     line-height: 16px;
-    margin-top: 1px;
+    margin-top: -20px;
     padding: 8px 8px;
     background: $roxo;
     border-bottom-left-radius: $radius;
     border-bottom-right-radius: $radius;
+    border-bottom: 3px solid #5f5b6626;
 }
 
 .loteria-info {
@@ -737,5 +740,30 @@ footer {
         img {
             margin: 8px 8px;
         }
+    }
+}
+
+.redeflutuante {
+    height: 300px;
+    width: 8px;
+    position: fixed;
+    bottom: 150px;
+    background: $roxo;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 99;
+    .icon {
+        background-color: #593d81;
+        position: relative;
+        top: calc(50% - 25px);
+        border-radius: 3px;
+        left: 18px;
+        background-image: url(../images/arrow-twitter.svg);
+        width: 24px;
+        height: 50px;
+        background-position: center;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        float: right;
     }
 }

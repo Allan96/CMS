@@ -64,18 +64,18 @@
 
 .dropdown {
     .nav-link {
-        img {
-            transform: rotate(0deg);
-            transition: $transition;
-        }
+        // img {
+        //     transform: rotate(0deg);
+        //     transition: $transition;
+        // }
     }
 }
 
 .dropdown.show {
     .nav-link {
-        img {
-            transform: rotate(-90deg);
-            transition: $transition;
-        }
+        // img {
+        //     transform: rotate(-90deg);
+        //     transition: $transition;
+        // }
     }
 }

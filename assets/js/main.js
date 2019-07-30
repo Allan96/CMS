@@ -41,4 +41,25 @@ $(document).ready(function() {
 
     });
 
+    $('.redeflutuante').click(function(e) {
+        e.preventDefault();
+        var open = $('.redeflutuante').hasClass('open');
+        if (!open) {
+            $('.redeflutuante').addClass('open');
+            $(".redeflutuante").animate({
+                width: "8px",
+            }, 1000, function() {
+                // Animation complete.
+            });
+
+        } else {
+            $('.redeflutuante').removeClass('open');
+            $(".redeflutuante").animate({
+                width: "300px",
+            }, 1000, function() {
+                // Animation complete.
+            });
+        }
+    });
+
 });
