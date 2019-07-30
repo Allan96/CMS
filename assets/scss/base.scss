@@ -408,6 +408,7 @@ header {
 
 #noticias {
     margin-top: 12px;
+    padding-bottom: 32px;
     .noticias-items {
         background: $roxo;
         height: 200px;
@@ -440,6 +441,12 @@ header {
             left: 8px;
             background: white;
             border-radius: 3px;
+        }
+    }
+    .flickity-page-dots {
+        bottom: 10px;
+        .dot {
+            background: #593d81;
         }
     }
 }
@@ -765,5 +772,24 @@ footer {
         background-size: 24px;
         background-repeat: no-repeat;
         float: right;
+    }
+}
+
+#hallmore {
+    .flickity-viewport {
+        width: 100%;
+    }
+    .flickity-button {
+        background: none!important;
+        color: $roxo;
+        &:hover {
+            background: none!important;
+        }
+    }
+    .flickity-prev-next-button.previous {
+        left: -20px;
+    }
+    .flickity-prev-next-button.next {
+        right: -20px;
     }
 }

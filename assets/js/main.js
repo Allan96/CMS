@@ -3,6 +3,15 @@ $('#noticias').flickity({
     contain: true,
     prevNextButtons: false,
     groupCells: true,
+    pageDots: true,
+    freeScroll: true,
+    wrapAround: true
+});
+$('#hallmore').flickity({
+    cellAlign: 'left',
+    contain: true,
+    prevNextButtons: true,
+    groupCells: true,
     pageDots: false,
     freeScroll: true,
     wrapAround: true
