@@ -1,0 +1,764 @@
+@import url('https://fonts.google.com/specimen/Nunito');
+#meudiv {
+    background-color: #e9e9e1;
+    width: 581px;
+    height: 360px;
+    padding: 10px;
+    border-radius: 6px;
+    position: fixed;
+    border: 2px solid #e9e9e1;
+    border-top: 0;
+    z-index: 100;
+    display: none;
+}
+
+#sussurro,
+#desa {
+    z-index: 100;
+    height: 65px;
+    background-color: #171715;
+    position: absolute;
+    width: 189px;
+    top: 105px;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    font-family: Ubuntu;
+    font-size: 11px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 2px solid #353431;
+    display: none;
+}
+
+#users {
+    width: 87%;
+    float: left;
+}
+
+#web1 {
+    width: 570px;
+    background: #e9e9e1;
+    height: 0px;
+    margin: -9px 0 4px -12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #e9e9e1;
+    border-bottom: 0;
+}
+
+#web2 {
+    background: url(https://i.imgur.com/7yxEMYe.png);
+    height: 27px;
+    background-repeat: no-repeat;
+    float: right;
+    background-position: center;
+    width: 21px;
+    cursor: pointer;
+}
+
+#alertax {
+    display: none;
+    background-image: url(https://i.imgur.com/YCHyj1x.png);
+    height: 242px;
+    width: 474px;
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: fixed;
+    left: 446px;
+    top: 195px;
+}
+
+#web3 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 0px 0px 0px 133px;
+    margin-top: 20px;
+}
+
+#web4 {
+    font-size: 25px;
+}
+
+.web5 {
+    top: -25px;
+    position: relative;
+    float: left;
+    color: #040404b0;
+    left: -109px;
+    font-size: 17px;
+}
+
+#web6 {
+    background-image: url(https://i.imgur.com/pptsIUk.png);
+    height: 32px;
+    width: 135px;
+    float: right;
+    margin-top: -32px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    margin-right: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    background-repeat: no-repeat;
+}
+
+#limpar {
+    z-index: 100;
+    height: 31px;
+    background-color: #171715;
+    position: absolute;
+    width: 189px;
+    top: 69px;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    font-family: Ubuntu;
+    font-size: 11px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 2px solid #353431;
+    cursor: pointer;
+    display: none;
+}
+
+#myDIV {
+    background-image: url(https://i.imgur.com/drLNBDf.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 100;
+    display: none;
+    background-color: rgba(2, 2, 2, 0.79);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+#imgpos {
+    position: absolute;
+    left: 47%;
+    top: 30%;
+    margin-left: -110px;
+    margin-top: -40px;
+}
+
+#avatar1,
+#avatar2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes example {
+    0% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgb(141, 68, 96)) drop-shadow(-4px 2px 0 rgb(141, 68, 96)) drop-shadow(0 -4px 0 rgb(157, 76, 101));
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgba(141, 68, 96, 0)) drop-shadow(-4px 2px 0 rgba(141, 68, 96, 0)) drop-shadow(0 -4px 0 rgba(157, 76, 101, 0));
+        left: 0;
+        top: 20px;
+    }
+    50% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgb(141, 68, 96)) drop-shadow(-4px 2px 0 rgb(141, 68, 96)) drop-shadow(0 -4px 0 rgb(157, 76, 101));
+        left: 0px;
+        top: 0px;
+    }
+    75% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgba(141, 68, 96, 0)) drop-shadow(-4px 2px 0 rgba(141, 68, 96, 0)) drop-shadow(0 -4px 0 rgba(157, 76, 101, 0));
+        left: 0px;
+        top: 20px;
+    }
+    100% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgb(141, 68, 96)) drop-shadow(-4px 2px 0 rgb(141, 68, 96)) drop-shadow(0 -4px 0 rgb(157, 76, 101));
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes example {
+    0% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgb(141, 68, 96)) drop-shadow(-4px 2px 0 rgb(141, 68, 96)) drop-shadow(0 -4px 0 rgb(157, 76, 101));
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgba(141, 68, 96, 0)) drop-shadow(-4px 2px 0 rgba(141, 68, 96, 0)) drop-shadow(0 -4px 0 rgba(157, 76, 101, 0));
+        left: 0;
+        top: 20px;
+    }
+    50% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgb(141, 68, 96)) drop-shadow(-4px 2px 0 rgb(141, 68, 96)) drop-shadow(0 -4px 0 rgb(157, 76, 101));
+        left: 0px;
+        top: 0px;
+    }
+    75% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgba(141, 68, 96, 0)) drop-shadow(-4px 2px 0 rgba(141, 68, 96, 0)) drop-shadow(0 -4px 0 rgba(157, 76, 101, 0));
+        left: 0px;
+        top: 20px;
+    }
+    100% {
+        -webkit-filter: drop-shadow(4px 1px 0 rgb(141, 68, 96)) drop-shadow(-4px 2px 0 rgb(141, 68, 96)) drop-shadow(0 -4px 0 rgb(157, 76, 101));
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+/* teste */
+
+.ha_rp {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+}
+
+.ha_rp .corpo_harp {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 400px;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 8px;
+    border-radius: 5px;
+    pointer-events: auto;
+    max-height: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    margin-top: 350;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+
+.ha_rp .corpo_harp:hover {
+    opacity: .9;
+    transition: opacity .05s
+}
+
+.ha_rp .corpo_harp * {
+    cursor: pointer
+}
+
+.ha_rp .corpo_harp .header_harp {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.ha_rp .corpo_harp .header_harp .tit_harp {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin: -8px -8px 0;
+    padding: 5px;
+    text-align: center;
+    -ms-flex: 1;
+    flex: 1
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+#alert-1 {
+    background-position: top center;
+    bottom: 0;
+    color: #fff;
+    display: table;
+    font-size: 20px;
+    height: 437px;
+    image-rendering: pixelated;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 698px;
+    z-index: 11;
+}
+
+.alert-eha {
+	font-family: 'Nunito', sans-serif !important;
+	display: none;
+}
+
+.alert-eha .gradient {
+    background: linear-gradient(0deg, #043600, transparent);
+    background-position-y: 57px;
+    background-size: 10px 90px;
+    background-repeat-y: no-repeat;
+    top: auto;
+}
+
+.alert-eha img,
+.alert-ha img,
+.alert-hal img
+{
+	float: right;
+	margin-top: -84px;
+	margin-right: 20px;
+}
+
+.alert-eha .staffname {
+    z-index: 30;
+    margin-top: 122px;
+    position: absolute;
+    width: 130px;
+    padding: 3px 5px;
+    background: #96ff83;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.alert-eha .avatar {
+	height: 138px;
+	background-repeat: no-repeat !important;
+	margin-left: 5px;
+	margin-bottom: -58px;
+	margin-top: -56px;
+}
+
+.alert-eha .text-top-1 {
+    margin-left: -288px;
+    font-weight: 600;
+    margin-top: -36px;
+    font-size: 27px;
+    margin-bottom: -4px;
+}
+
+.alert-eha .text-top-2 {
+    font-size: 29px;
+    font-weight: 800;
+    margin-left: 0px;
+    margin-top: -9px;
+    margin-bottom: -4px;
+}
+
+.alert-eha .block {
+    background: #3eac2ae3;
+    border: 3px solid #96ff83;
+    width: 698px;
+    border-radius: 23px;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    height: 232px;
+}
+
+.alert-eha .block p {
+	text-align: left;
+    font-size: 18px;
+    width: 370px;
+    line-height: 1.2;
+    margin-top: 49px;
+    float: right;
+    color: #fff;
+}
+
+.alert-eha .block p span.event-name {
+	background: #96ff83;
+	padding: 0px 20px;
+	margin-top: -50px;
+	position: absolute;
+	width: 378px;
+	margin-left: -8px;
+	height: 24px !important;
+	border-bottom-left-radius: 10px;
+	color: #11702b;
+	font-weight: 800;
+}
+
+.alert-eha .block p span.text-user {
+	font-size: 23px;
+    line-height: 1.6;
+}
+
+.alert-eha .block div.image {
+	background: url(../img/article_battleBanzai_1.gif);
+	margin-top: -5px;
+	height: 248px;
+	width: 298px;
+	margin-left: 23px;
+	position: absolute;
+}
+
+.alert-eha .block button.goto {
+    background: #20ff5c;
+    border: 3px solid #adfd9e;
+    margin-top: 246px;
+    width: 202px;
+    border-radius: 17px;
+    font-weight: 900;
+    height: 52px;
+    color: #11702b;
+    float: right;
+    margin-right: -354px;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.alert-eha .block button.no {
+    background: #ff1f1f91;
+    border: 3px solid #ff6b6b;
+    margin-top: 246px;
+    width: 202px;
+    border-radius: 17px;
+    font-weight: 900;
+    height: 52px;
+    color: #ffbebe;
+    float: left;
+    margin-left: 15px;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.alert-eha .block button:hover {
+	text-decoration: underline;
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+#alert-2 {
+    background-position: top center;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    font-size: 20px;
+    height: 437px;
+    image-rendering: pixelated;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 633px;
+    z-index: 11;
+}
+
+.alert-ha {
+	font-family: 'Nunito', sans-serif !important;
+}
+
+.alert-ha .gradient {
+    background: linear-gradient(0deg, #991010, transparent);
+    background-position-y: 57px;
+    background-size: 10px 90px;
+    background-repeat-y: no-repeat;
+    top: auto;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.alert-ha .staffname {
+    z-index: 30;
+    margin-top: 122px;
+    position: absolute;
+    width: 130px;
+    padding: 3px 5px;
+    background: #cc3333;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fdfdfd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.alert-ha .avatar {
+	height: 138px;
+	background-repeat: no-repeat !important;
+	margin-left: 5px;
+	margin-bottom: -58px;
+	margin-top: -56px;
+}
+
+.alert-ha .text-top-1 {
+    margin-left: 160px;
+    font-weight: 600;
+    margin-top: -36px;
+    text-align: left;
+    font-size: 27px;
+    margin-bottom: -4px;}
+
+.alert-ha .text-top-2 {
+    font-size: 33px;
+    font-weight: 800;
+    margin-left: 160px;
+    margin-top: -9px;
+    margin-bottom: -9px;
+    text-align: left;
+}
+
+.alert-ha .block {
+    background: #cc3333ba;
+    border: 3px solid #cc3333;
+    width: 633px;
+    border-radius: 23px;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    height: 232px;
+    margin: 0px 0px 0px 0px;
+}
+
+.alert-ha .block p {
+	text-align: left;
+	background: #cc3333;
+	font-size: 18px;
+	width: 100%;
+	line-height: 1.2;
+	margin-top: 48px;
+	color: #fff;
+	padding: 24px 50px 43px 42px;
+	height: 134px;
+}
+
+.alert-ha .block p span.event-name {
+	background: #96ff83;
+	padding: 12px 20px;
+	margin-top: -50px;
+	position: absolute;
+	width: 339px;
+	margin-left: -8px;
+	height: 20px !important;
+	border-bottom-left-radius: 10px;
+	color: #11702b;
+	font-weight: 800;
+}
+
+.alert-ha .block p span.text-user {
+	font-size: 23px;
+    line-height: 1.6;
+}
+
+.alert-ha .block div.image {
+	/* background: url(/cdn/theme-sci-fi/img/extras/article_battleBanzai_1.gif); */
+	/* margin-top: -8px; */
+	/* height: 248px; */
+	/* width: 298px; */
+	/* position: absolute; */
+}
+
+.alert-ha .block button.goto {
+    background: #20ff5c;
+    border: 3px solid #adfd9e;
+    margin-top: 44px;
+    width: 202px;
+    border-radius: 17px;
+    font-weight: 900;
+    height: 52px;
+    color: #11702b;
+    float: right;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.alert-ha .block button.no {
+    background: #ff1f1f91;
+    border: 3px solid #ff6b6b;
+    margin-top: 246px;
+    width: 202px;
+    border-radius: 17px;
+    font-weight: 900;
+    height: 52px;
+    color: #ffbebe;
+    float: left;
+    margin-left: 15px;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.alert-ha .block button:hover {
+	text-decoration: underline;
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+#alert-3 {
+    background-position: top center;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    font-size: 20px;
+    height: 437px;
+    image-rendering: pixelated;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 633px;
+    z-index: 11;
+
+}
+
+.alert-hal {
+	font-family: 'Nunito', sans-serif !important;
+}
+
+.alert-hal .gradient {
+    background: linear-gradient(0deg, #7c5500, transparent);
+    background-position-y: 57px;
+    background-size: 10px 90px;
+    background-repeat-y: no-repeat;
+    top: auto;
+}
+
+.alert-hal .staffname {
+    z-index: 30;
+    margin-top: 122px;
+    position: absolute;
+    width: 130px;
+    padding: 3px 5px;
+    background: #fdbd3d;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.alert-hal .avatar {
+	height: 138px;
+	background-repeat: no-repeat !important;
+	margin-left: -90px;
+	background-position-y: 2px !important;
+	margin-bottom: -58px;
+	margin-top: -50px;
+	/* float: left; */
+	background-position-x: 48px !important;
+}
+
+.alert-hal .text-top-1 {
+    margin-left: 160px;
+    font-weight: 600;
+    margin-top: -36px;
+    text-align: left;
+    font-size: 27px;
+    margin-bottom: -4px;
+}
+
+.alert-hal .text-top-2 {
+    font-size: 33px;
+    font-weight: 800;
+    margin-left: 160px;
+    margin-top: -9px;
+    margin-bottom: -9px;
+    text-align: left;
+}
+
+.alert-hal .block {
+    background: #d58e00e8;
+    border: 3px solid #fdbd3d;
+    width: 633px;
+    border-radius: 23px;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    height: 220px;
+}
+
+.alert-hal .block p {
+	text-align: left;
+    font-size: 18px;
+    width: 370px;
+    line-height: 1.2;
+    margin-top: 49px;
+    float: right;
+    color: #fff;
+}
+
+.alert-hal .block p span.event-name {
+	background: #edbd3d;
+	padding: 0px 17px;
+	margin-top: -49px;
+	position: absolute;
+	width: 391px;
+	margin-left: -21px;
+	height: 25px !important;
+	border-bottom-left-radius: 10px;
+	color: #bb6c0c;
+	font-weight: 800;
+}
+
+.alert-hal .block p span.text-user {
+	font-size: 23px;
+    line-height: 1.6;
+}
+
+.alert-hal .block div.image {
+	background: url(../img/frank_11.gif) no-repeat;
+	margin-top: 31px;
+	height: 248px;
+	width: 298px;
+	margin-left: 69px;
+	position: absolute;
+	pointer-events: none;
+}
+
+.alert-hal .block button.goto {
+    background: #20ff5c;
+    border: 3px solid #adfd9e;
+    margin-top: 236px;
+    width: 202px;
+    border-radius: 17px;
+    font-weight: 900;
+    height: 52px;
+    color: #11702b;
+    float: right;
+    margin-right: -354px;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 13px;
+}
+
+.alert-hal .block button.no {
+    background: #ff1f1f91;
+    border: 3px solid #ff6b6b;
+    margin-top: 236px;
+    width: 202px;
+    border-radius: 17px;
+    font-weight: 900;
+    height: 52px;
+    color: #ffbebe;
+    float: left;
+    margin-left: 15px;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 18px;
+    /* pointer-events: none; */
+}
+
+.alert-hal .block button:hover {
+	text-decoration: underline;
+	opacity: 0.9;
+	cursor: pointer;
+}
