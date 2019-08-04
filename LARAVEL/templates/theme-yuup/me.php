@@ -9,15 +9,15 @@
                     <img src="templates/theme-yuup/assets/images/settings.svg" width="16" alt="" srcset="">
                     <div class="lookavatar"></div>
                     <p>
-                        Usuário
+                    <?= User::userData('username') ?>
                         <br>
                         <small>
-                             Rainha do baile funk
+                        <?= User::userData('motto') ?>
                         </small>
                     </p>
                 </div>
                 <div class="user-coins">
-                    987 moedas | 764 diamantes | 6754 sorvetinhos
+                <?= round(User::userData('credits')/1000) ?>M moedas | <?= User::userData('vip_points') ?> diamantes | <?= User::userData('gotw_points') ?> sorvetinhos
                 </div>
             </div>
             <div class="col-12 col-md-7">
@@ -74,66 +74,24 @@
             </div>
             <div class="col-12">
                 <div id="noticias">
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="noticias-items">
-                        <div class="autor-noticia"></div>
-                        <div class="data">Hoje</div>
-                        <div class="titulo-noticia">Lorem ipsum dolor sit amet.</div>
-                    </div>
+                <?php
+               
+               $sql = $dbh->prepare("SELECT id,title,image,shortstory,longstory,author FROM cms_news ORDER BY id DESC LIMIT 20");
+               $sql->execute();
+               while ($news = $sql->fetch())
+               {
+               	echo'
+                   <a class="noticias-items"  href="/news/'.filter($news["id"]).'"  style="background-image:linear-gradient(rgba(89, 61, 129, .4), rgba(89, 61, 129, .4)), url('.filter($news["image"]).');background-position: center;background-size: cover;">
+                   <div class="autor-noticia"  style="background-image: url(http://yuup.online/api/head/'.$news['author'].');background-position: 0 -5px;height: 62px;width: 62px;"></div>
+                   <div class="data">Hoje</div>
+                   <div class="titulo-noticia">'.filter($news["title"]).'</div>
+               </a>
+               ';
+               
+               }
+               ?>
+
+                
 
                 </div>
             </div>
