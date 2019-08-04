@@ -17,5 +17,5 @@ imagecopy($imagem, $home, 0, 0, 0, 0, 54, 110);
 
 ImagePng($imagem);//Converte a imagem para um GIF e a envia para o browser
 
-ImageDestroy($imagem); //Destrói a memória alocada para a construção da imagem GIF.
+ImageDestroy($imagem); //Destrói a memória alocada para a construção da imagem GIF. 
 ?>
