@@ -1,6 +1,24 @@
-<?php include 'model-layout/header.php'; ?>
+<?php include 'model-layout/header.php'; 
+
+	if(isset($_GET['userref'])){
+		$userref = $_GET['userref'];
+		$name = $dbh->prepare("SELECT username,id from users WHERE username='$userref'");
+		$name->execute();
+		$getUserRef = $name->fetch();
+		$idref=$getUserRef['id'];
+		$user_ip = User::getUserIP();
+	}
+	else
+	{
+		$userref = '';
+		$idref='127.0.0.1';
+		$user_ip = '127.0.0.1';
+	}
+?>
 
 <body>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
     <section id="registro">
         <nav class="navbar navbar-expand-sm navbar-light bg-index">
             <div class="container">
@@ -48,27 +66,40 @@
                     </div>
                     <?php //User::UserExiste(); ?>
                     <form id="registroAjax" method="post">
-                <div class="form-group">
-                        <input type="text" name="username" class="form-control" id="username" placeholder="Nome" aria-describedby="helpId">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="email" id="" class="form-control" placeholder="Endereço de e-mail" aria-describedby="helpId">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="password" id="" class="form-control" placeholder="Senha" aria-describedby="helpId">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="password_repeat" id="" class="form-control" placeholder="Repita sua senha" aria-describedby="helpId">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 p-0"><button type="submit" class="btn btn-primary w-100 bgc-green bdc-green">Criar meu avatar</button></div>
+                        <div class="form-group">
+                            <input type="text" name="username" class="form-control" id="username" placeholder="Nome" aria-describedby="helpId">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" name="email" id="" class="form-control" placeholder="Endereço de e-mail" aria-describedby="helpId">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="password" id="" class="form-control" placeholder="Senha" aria-describedby="helpId">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="password_repeat" id="" class="form-control" placeholder="Repita sua senha" aria-describedby="helpId">
+                        </div>
+                        <div class="form-group">
+                            <select required="required" class="form-control" id="exampleSelect1" data-msg-required="Por favor escolha uma opção" name="habbo-avatar" style="height: 34px;">
+			                    <option value="hr-105-1035.hd-180-1.ch-215-92.lg-275-94.sh-295-1408">Sou um menino</option>
+			                    <option value="hr-515-33.hd-600-1.ch-635-70.lg-716-66-62.sh-735-68">Sou uma menina</option>
+                        
+                            </select>
+
+                            <div class="g-recaptcha" data-sitekey="6LdpN18UAAAAAH5jVDyRI7rfRg7gEOhgIGG479VJ" style="margin-top: 6px;"></div>
+                        </div>
+                        <input type="text" class="form-control" style="height: 0;border: 0;width: 0;padding: 0;" name="referrer" value="<?=$userref?>">
+                        <input type="text" class="form-control" style="height: 0;border: 0;width: 0;padding: 0;" name="ip" value="<?=$user_ip?>">
+                        <input type="text" class="form-control" style="height: 0;border: 0;width: 0;padding: 0;" name="nameref" value="<?=$idref?>">
+                        <input type="text" class="form-control" name="motto" id="motto" style="padding: 0;height: 0;border: 0;width: 0;" value="I <3 <?= $config['hotelName'] ?>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 p-0"><button type="submit" name="register" class="btn btn-primary w-100 bgc-green bdc-green">Criar meu avatar</button></div>
+                            </div>
+                        </div>
 
 
                     </form>
-                    
+
 
                 </div>
             </div>

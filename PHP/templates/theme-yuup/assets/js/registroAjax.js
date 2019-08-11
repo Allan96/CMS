@@ -24,6 +24,7 @@ $(document).ready(function() {
                 minlength: 6,
             },
             email: {
+                required: true,
                 email: true,
             }
 
