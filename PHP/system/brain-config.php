@@ -32,7 +32,7 @@
 	$hotel['swfFolderSwf'] = "http://swf.yuup.online/gordon/YUUP201812/Yuup20183.swf?addaddaa11111";
 	
 	/* Website Setting */
-	$config['hotelUrl'] = "http://localhost/2019/CMS-Yuup/LARAVEL";//Address of your hotel. Does not end with a "/"
+	$config['hotelUrl'] = "http://localhost/2019/CMS-Yuup/PHP";//Address of your hotel. Does not end with a "/"
 	$config['skin'] = "theme-yuup"; //Skin/template of your website
 	$config['lang'] = "en"; //Language of your website /en/nl/es
 	$config['donos'] = "Weve";
