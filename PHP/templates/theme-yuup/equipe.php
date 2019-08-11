@@ -1,5 +1,7 @@
 
-<?php include 'model-layout/header.php'; ?>
+<?php 
+include 'model-layout/header.php';
+?>
 <body>
     <?php include 'model-layout/menu.php'; ?>
     <div class="container">
@@ -10,277 +12,173 @@
                 </h2>
 
             </div>
-            <div class="col-12 col-md-4">
+            <?php
+               
+               $sql = $dbh->prepare("SELECT username,look,motto,online FROM users WHERE rank = 9 ORDER BY id ");
+               $sql->execute();
+               while ($equipe = $sql->fetch())
+               {
+               	?>
+ <div class="col-12 col-md-4">
                 <div class="user-info mt-1">
                     <span class="title">
-                                CARGO
+                                FUNDADOR
                             </span>
-                    <div class="lookavatar"></div>
+                            <div class="lookavatar" style="background-image: url(http://yuup.online/api/head/<?php echo $equipe['username'] ?>);    background-position: -1px -11px;"></div>
                     <p>
-                        Usuário
+                    <?php echo $equipe['username'] ?>
                         <br>
                         <small>
-                                 Rainha do baile funk
+                        <?php echo $equipe['motto'] ?>
                             </small>
                     </p>
                 </div>
                 <div class="user-coins">
-                    Entrou há 90 horas atrás
+                    <?php if( $equipe['online'] == 1){
+                        echo 'Está online agora';
+                    }
+                    else{
+                        echo 'Entrou há 999 horas';
+                    }
+                    ?>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                    CARGO
-                                </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                     Rainha do baile funk
-                                </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                        CARGO
-                                    </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                         Rainha do baile funk
-                                    </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
+            <?php
+               
+               }
+               ?>
+           
+                           
+
+
+           
+
             <div class="col-12 mt-5 upper bold mb-0">
                 <h2 class="c-roxo">
                     Gerentes
                 </h2>
 
             </div>
-            <div class="col-12 col-md-4">
+            <?php
+               
+               $sql = $dbh->prepare("SELECT username,look,motto,online FROM users WHERE rank = 8 ORDER BY id ");
+               $sql->execute();
+               while ($equipe = $sql->fetch())
+               {
+               	?>
+ <div class="col-12 col-md-4">
                 <div class="user-info mt-1">
                     <span class="title">
-                                            CARGO
-                                        </span>
-                    <div class="lookavatar"></div>
+                                GERENTE
+                            </span>
+                            <div class="lookavatar" style="background-image: url(http://yuup.online/api/head/<?php echo $equipe['username'] ?>);    background-position: -1px -11px;"></div>
                     <p>
-                        Usuário
+                    <?php echo $equipe['username'] ?>
                         <br>
                         <small>
-                                             Rainha do baile funk
-                                        </small>
+                        <?php echo $equipe['motto'] ?>
+                            </small>
                     </p>
                 </div>
                 <div class="user-coins">
-                    Entrou há 90 horas atrás
+                    <?php if( $equipe['online'] == 1){
+                        echo 'Está online agora';
+                    }
+                    else{
+                        echo 'Entrou há 999 horas';
+                    }
+                    ?>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                                CARGO
-                                            </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                                 Rainha do baile funk
-                                            </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                                    CARGO
-                                                </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                                     Rainha do baile funk
-                                                </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
+            <?php
+               
+               }
+               ?>
             <div class="col-12 mt-5 upper bold mb-0">
                 <h2 class="c-roxo">
-                    adminisrtadores
+                    ADMINISTRADORES
                 </h2>
 
             </div>
-            <div class="col-12 col-md-4">
+            <?php
+               
+            $sql = $dbh->prepare("SELECT username,look,motto,online FROM users WHERE rank = 7 ORDER BY id ");
+               $sql->execute();
+               while ($equipe = $sql->fetch())
+               {
+               	?>
+ <div class="col-12 col-md-4">
                 <div class="user-info mt-1">
                     <span class="title">
-                                                        CARGO
-                                                    </span>
-                    <div class="lookavatar"></div>
+                                ADMINISTRADORES
+                            </span>
+                            <div class="lookavatar" style="background-image: url(http://yuup.online/api/head/<?php echo $equipe['username'] ?>);    background-position: -1px -11px;"></div>
                     <p>
-                        Usuário
+                    <?php echo $equipe['username'] ?>
                         <br>
                         <small>
-                                                         Rainha do baile funk
-                                                    </small>
+                        <?php echo $equipe['motto'] ?>
+                            </small>
                     </p>
                 </div>
                 <div class="user-coins">
-                    Entrou há 90 horas atrás
+                    <?php if( $equipe['online'] == 1){
+                        echo 'Está online agora';
+                    }
+                    else{
+                        echo 'Entrou há 999 horas';
+                    }
+                    ?>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                                            CARGO
-                                                        </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                                             Rainha do baile funk
-                                                        </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                                                CARGO
-                                                            </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                                                 Rainha do baile funk
-                                                            </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
-
+            <?php
+               
+               }
+               ?>
+           
             <div class="col-12 mt-5 upper bold mb-0">
                 <h2 class="c-roxo">
                     Moderadores
                 </h2>
 
             </div>
-            <div class="col-12 col-md-4">
+
+            <?php
+               
+            $sql = $dbh->prepare("SELECT username,look,motto,online FROM users WHERE rank = 6 ORDER BY id ");
+               $sql->execute();
+               while ($equipe = $sql->fetch())
+               {
+               	?>
+ <div class="col-12 col-md-4">
                 <div class="user-info mt-1">
                     <span class="title">
-                                CARGO
+                                MODERADORES
                             </span>
-                    <div class="lookavatar"></div>
+                            <div class="lookavatar" style="background-image: url(http://yuup.online/api/head/<?php echo $equipe['username'] ?>);    background-position: -1px -11px;"></div>
                     <p>
-                        Usuário
+                    <?php echo $equipe['username'] ?>
                         <br>
                         <small>
-                                 Rainha do baile funk
+                        <?php echo $equipe['motto'] ?>
                             </small>
                     </p>
                 </div>
                 <div class="user-coins">
-                    Entrou há 90 horas atrás
+                    <?php if( $equipe['online'] == 1){
+                        echo 'Está online agora';
+                    }
+                    else{
+                        echo 'Entrou há 999 horas';
+                    }
+                    ?>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                    CARGO
-                                </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                     Rainha do baile funk
-                                </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                        CARGO
-                                    </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                         Rainha do baile funk
-                                    </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                            CARGO
-                                        </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                             Rainha do baile funk
-                                        </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="user-info mt-1">
-                    <span class="title">
-                                CARGO
-                            </span>
-                    <div class="lookavatar"></div>
-                    <p>
-                        Usuário
-                        <br>
-                        <small>
-                                 Rainha do baile funk
-                            </small>
-                    </p>
-                </div>
-                <div class="user-coins">
-                    Entrou há 90 horas atrás
-                </div>
-            </div>
+            <?php
+               
+               }
+               ?>
+           
         </div>
     </div>
 

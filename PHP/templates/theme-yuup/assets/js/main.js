@@ -5,7 +5,7 @@ $('#noticias').flickity({
     groupCells: true,
     pageDots: true,
     freeScroll: true,
-    wrapAround: true
+    wrapAround: false
 });
 $('#hallmore').flickity({
     cellAlign: 'left',
@@ -14,7 +14,7 @@ $('#hallmore').flickity({
     groupCells: true,
     pageDots: false,
     freeScroll: true,
-    wrapAround: true
+    wrapAround: false
 });
 
 $(document).ready(function() {

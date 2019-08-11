@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-12 col-md-5">
                 <div class="user-info">
-                    <img src="templates/theme-yuup/assets/images/settings.svg" width="16" alt="" srcset="">
-                    <div class="lookavatar"></div>
+                <a href="../ajustes"> <img src="../templates/theme-yuup/assets/images/settings.svg" width="16" alt="" srcset=""></a>
+                    <div class="lookavatar" style="background-image: url(http://yuup.online/api/head/<?= User::userData('username') ?>);    background-position: -1px -4px;"></div>
                     <p>
                     <?= User::userData('username') ?>
                         <br>
@@ -37,7 +37,7 @@
 
                         <br> Você compra seu ticket contendo 2 números aleatórios. Quanto mais tickets comprar, maiores são as suas chances de GANHAR.
                         <br>
-                        <a class="d-none d-md-block" href="#"> Ir para a loteria <img src="templates/theme-yuup/assets/images/arrow-right.svg" width="10" alt=""></a>
+                        <a class="d-none d-md-block" href="#"> Ir para a loteria <img src="../templates/theme-yuup/assets/images/arrow-right.svg" width="10" alt=""></a>
                     </p>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                while ($news = $sql->fetch())
                {
                	echo'
-                   <a class="noticias-items"  href="/news/'.filter($news["id"]).'"  style="background-image:linear-gradient(rgba(89, 61, 129, .4), rgba(89, 61, 129, .4)), url('.filter($news["image"]).');background-position: center;background-size: cover;">
+                   <a class="noticias-items"  href="./news/'.filter($news["id"]).'"  style="background-image:linear-gradient(rgba(89, 61, 129, .4), rgba(89, 61, 129, .4)), url('.filter($news["image"]).');background-position: center;background-size: cover;">
                    <div class="autor-noticia"  style="background-image: url(http://yuup.online/api/head/'.$news['author'].');background-position: 0 -5px;height: 62px;width: 62px;"></div>
                    <div class="data">Hoje</div>
                    <div class="titulo-noticia">'.filter($news["title"]).'</div>
@@ -141,112 +141,83 @@
             </div>
             <div class="container">
                 <div id="hallmore" class="row">
-                    <div class="col-3 d-none d-md-block">
+                <div class="col-3 d-none d-md-block">
                         <div class="users-list">
-                            <div class="list-item">
+                <?php
+                    foreach (Admin::hall('credits') as $resultado1)
+                     {
+                ?>
+                    
+                          
+                        <div class="list-item">
                                 <div class="tag">Moedas</div>
                                 <div class="list-avatar"></div>
                                 <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 moedas</small>
+                                <?=$resultado1['username'] ?> <br>
+                                    <small><?=$resultado1['credits'] ?> moedas</small>
                                 </p>
-                            </div>
-
-
-                        </div>
-                    </div>
+                            </div>    
+                <?php
+                    }
+                ?> </div>
+                </div>
                     <div class="col-3 d-none d-md-block">
                         <div class="users-list">
+                        <?php
+                        foreach (Admin::hall('vip_points') as $resultado2)
+                        {
+                        ?>
                             <div class="list-item">
                                 <div class="tag">Diamantes</div>
                                 <div class="list-avatar"></div>
                                 <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 diamantes</small>
+                                    <?=$resultado2['username']?> <br>
+                                    <small><?=$resultado2['vip_points']?> diamantes</small>
                                 </p>
                             </div>
+                        <?php
+                        }
+                        ?>
                         </div>
                     </div>
                     <div class="col-3 d-none d-md-block">
                         <div class="users-list">
+                        <?php
+                        foreach (Admin::hall('gotw_points') as $resultado3)
+                        {
+                        ?>
                             <div class="list-item">
                                 <div class="tag">Sorvetinhos</div>
                                 <div class="list-avatar"></div>
                                 <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 sorvetinhos</small>
+                                    <?=$resultado3['username']?><br>
+                                    <small><?=$resultado3['gotw_points']?> sorvetinhos</small>
                                 </p>
                             </div>
+                        <?php
+                        }
+                        ?>
 
 
                         </div>
                     </div>
                     <div class="col-3 d-none d-md-block">
                         <div class="users-list">
+                        <?php
+                        foreach (Admin::hall('activity_points') as $resultado4)
+                        {
+                        ?>
                             <div class="list-item">
-                                <div class="tag">Picolés</div>
+                                <div class="tag">Duckets</div>
                                 <div class="list-avatar"></div>
                                 <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 picolés</small>
+                                <?=$resultado4['username']?> <br>
+                                    <small><?=$resultado4['activity_points']?> duckets</small>
                                 </p>
                             </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-3 d-none d-md-block">
-                        <div class="users-list">
-                            <div class="list-item">
-                                <div class="tag">Moedas</div>
-                                <div class="list-avatar"></div>
-                                <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 moedas</small>
-                                </p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-3 d-none d-md-block">
-                        <div class="users-list">
-                            <div class="list-item">
-                                <div class="tag">Diamantes</div>
-                                <div class="list-avatar"></div>
-                                <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 diamantes</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 d-none d-md-block">
-                        <div class="users-list">
-                            <div class="list-item">
-                                <div class="tag">Sorvetinhos</div>
-                                <div class="list-avatar"></div>
-                                <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 sorvetinhos</small>
-                                </p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-3 d-none d-md-block">
-                        <div class="users-list">
-                            <div class="list-item">
-                                <div class="tag">Picolés</div>
-                                <div class="list-avatar"></div>
-                                <p class="c-black">
-                                    Usuário <br>
-                                    <small>9857 picolés</small>
-                                </p>
-                            </div>
-
-
+                        <?php
+                        }
+                        ?>
                         </div>
                     </div>
                 </div>

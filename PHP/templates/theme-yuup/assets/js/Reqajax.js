@@ -5,7 +5,7 @@ $(document).ready(function() {
         console.log(Dados);
         $.ajax({
             type: "POST",
-            url: "http://localhost/2019/CMS-Yuup/PHP/loginAjax",
+            url: "http://testes.yuup.online/loginAjax",
             data: Dados,
             success: function(response) {
                 $('.errorAjax').html(response);

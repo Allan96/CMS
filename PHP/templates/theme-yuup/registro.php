@@ -114,7 +114,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
-    <script src="templates/theme-yuup/assets/js/registroAjax.js?55000"></script>
+    <script src="../templates/theme-yuup/assets/js/registroAjax.js?55000"></script>
 </body>
 
 </html>

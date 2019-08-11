@@ -7,7 +7,7 @@ $(document).ready(function() {
                 remote: {
                     // var UserExiste = $("#username").val();
                     type: 'POST',
-                    url: 'http://localhost/2019/CMS-Yuup/PHP/loginAjax',
+                    url: 'http://testes.yuup.online/loginAjax',
                     data: {
                         ValidaUser: function() {
                             return $("#username").val();

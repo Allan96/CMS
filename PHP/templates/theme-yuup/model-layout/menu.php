@@ -7,21 +7,21 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Principal</a>
+                        <a class="nav-link" href="../me">Principal</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-hover" href="#" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Comunidade
-                                        <img src="templates/theme-yuup/assets/images/arrow.svg" alt="" sizes="" srcset="" width="10">
+                                        <img src="../templates/theme-yuup/assets/images/arrow.svg" alt="" sizes="" srcset="" width="10">
                                 </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown2">
-                            <a class="dropdown-item" href="#">Equipe</a>
-                            <a class="dropdown-item" href="#">Colaboradores</a>
+                            <a class="dropdown-item" href="../equipe">Equipe</a>
+                            <a class="dropdown-item" href="../colaboradores">Colaboradores</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noticias
-                                    <img src="templates/theme-yuup/assets/images/arrow.svg" alt="" sizes="" srcset="" width="10">
+                                    <img src="../templates/theme-yuup/assets/images/arrow.svg" alt="" sizes="" srcset="" width="10">
                                 </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown1">
                             <a class="dropdown-item" href="#">Promoções ativas</a>
@@ -33,15 +33,11 @@
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item dropdown " style="width: 130px;">
                         <a class="nav-link dropdown-hover" href="#" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="templates/theme-yuup/assets/images/avatar.png" alt="" sizes="" srcset="" style="width: 50px;position: absolute;top: -20px;">
+                            <img src="http://yuup.online/api/head/<?= User::userData('username') ?>" alt="" sizes="" srcset="" style="position: absolute;top: -30px;">
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown2">
-                            <a class="dropdown-item" href="#">Preferencias</a>
-                            <a class="dropdown-item" href="#">Bla Bla</a>
-                            <a class="dropdown-item" href="#">Preferencias</a>
-                            <a class="dropdown-item" href="#">Bla Bla</a>
-                            <a class="dropdown-item" href="#">Preferencias</a>
-                            <a class="dropdown-item" href="#">Bla Bla</a>
+                            <a class="dropdown-item" href="../ajustes">Preferencias</a>
+                            <a class="dropdown-item" href="../sair">Sair</a>
                         </div>
                     </li>
                 </ul>
